@@ -1,0 +1,15 @@
+{
+  "name": "pc-accessories-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tail": "tailwindcss -i ./src/tailwind.css -o ./public/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
