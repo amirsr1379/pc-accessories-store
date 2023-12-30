@@ -1,3 +1,18 @@
 /* @tailwind base; */
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+    @font-face {
+        font-family:fonty ;
+        src: url(/font/Vazirmatn-RD-Bold.ttf);
+    }
+    body{
+        font-family: fonty;
+    }
+    a{
+        @apply  no-underline
+    }
+ 
+}
+    
