@@ -7,11 +7,12 @@
 @layer utilities{
     @font-face {
         font-family:fonty ;
-        src: url(/font/Vazirmatn-RD-Bold.ttf);
+        src: url(../ttf/Vazirmatn-Medium.ttf);
     }
     body{
         font-family: fonty;
     }
+
     a{
         @apply  no-underline
     }
