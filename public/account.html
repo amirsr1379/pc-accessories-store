@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login page</title>
+</head>
+
+<body class="text-right overflow-x-hidden">
+    <!-- header -->
+    <header class="py-4 shadow-md bg-purple-50">
+        <div class="container flex items-center justify-between">
+            <!-- logo-->
+            <a href="#"><img src="../Logo/header logo.svg" class="w-24" alt="website logo"></a>
+            <!-- searchbar-->
+            <div class="w-full max-w-xl relative flex">
+                <span class="absolute left-4 top-2 text-lg text-purple-600">
+                    <i class="fas fa-search"></i>
+                </span>
+                <input type="text"
+                    class="w-full border-2 border-purple-800 pl-12 py-3 pr-3 rounded-l-md focus:outline-none focus:bg-purple-400 focus:text-lg"
+                    placeholder="جستجو">
+                <button
+                    class="bg-purple-600 border text-white text-lg px-8 rounded-r-md hover:bg-black hover:text-purple-400 transition">جستجو</button>
+            </div>
+            <!-- icons -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-center text-purple-600 hover:text-sky-400 no-underline transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3 text-purple-950 font-bold">علاقه مندی ها</div>
+                    <span
+                        class="absolute right-0 top-1 w-5 h-5 rounded-full flex items-center justify-center bg-gray-700 text-white text-xs">25</span>
+                </a>
+                <a href="#" class="text-center text-purple-600 hover:text-sky-400 no-underline transition relative">
+                    <div class="text-2xl">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="text-xs leading-3 text-purple-950 font-bold">سبد خرید</div>
+                    <span
+                        class="absolute -right-3 top-1 w-5 h-5 rounded-full flex items-center justify-center bg-gray-700 text-white text-xs">13
+                    </span>
+                </a>
+                <a href="#" class="text-center text-purple-600 hover:text-sky-400 no-underline transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3 text-purple-950 font-bold">حساب کاربری</div>
+                    <span
+                        class="absolute right-0 top-1 w-5 h-5 rounded-full flex items-center justify-center bg-gray-700 text-white text-xs">3</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+
+
+
+
+
+
+
+    <!-- navbar -->
+    <nav class="bg-purple-950">
+        <div class="container flex flex-row-reverse ">
+            <!--  category -->
+            <div class="px-8 py-5 bg-purple-800 rounded-md flex items-center cursor-pointer  relative group">
+                <span class="capitalize mx-6 text-white hover:text-sky-400">دسته بندی ها</span>
+                <span class="text-white">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <div
+                    class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-dashed divide-x-0 divide-sky-300 hidden group-hover:block">
+                    <!-- subcategory -->
+                    <a href="#" class=" px-6 py-1  flex items-center hover:bg-sky-100 transition">
+                        <img src="../Logo/ram.jpg" alt="" class="w-10 h-10 object-contain">
+                        <span class="ml-6 text-purple-600 text-sm font-bold "> RAM</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-6 py-1  hover:bg-sky-100 transition ">
+                        <img src="../Logo/ssd.jpg" alt="" class="w-10 h-14 object-contain">
+                        <span class="ml-6 text-purple-600 text-sm font-bold "> SSD</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-6 py-3 6 hover:bg-sky-100 transition ">
+                        <img src="../Logo/gpu.png" alt="" class="w-10 h-10 object-contain">
+                        <span class="ml-6 text-purple-600 text-sm font-bold ">GPU</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-6 py-6 pl-6 hover:bg-sky-100 transition ">
+                        <img src="../Logo/cpu.png" alt="" class="w-10 h-10 object-contain">
+                        <span class="ml-6 text-purple-600 text-sm font-bold ">CPU</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-0 pl-3 hover:bg-sky-100 transition ">
+                        <img src="../Logo/motherboard.jpg" alt="" class="w-14 h-14 object-contain">
+                        <span class="text-purple-600 text-sm font-bold ">MOTHER BOARD</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-6 pl-4 hover:bg-sky-100 transition ">
+                        <img src="../Logo/power.jpg" alt="" class="w-12 h-12 object-contain">
+                        <span class="ml-6 text-purple-600 text-sm font-bold ">POWER</span>
+                    </a>
+                </div>
+            </div>
+            <!-- end subcategory-->
+
+            <!-- nav links -->
+            <div class="flex items-center justify-between flex-grow pr-12">
+                <div class="flex items-center space-x-6 capitalize pl-8">
+                    <a href="../public/home.html"
+                        class="text-purple-100 hover:text-sky-400 hover:text-lg transition ">خانه</a>
+                    <a href="../public/shop.html"
+                        class="text-purple-100 hover:text-sky-400 hover:text-lg transition ">فروشگاه</a>
+                    <a href="#" class="text-purple-100 hover:text-sky-400 hover:text-lg transition ">درباره ما</a>
+                    <a href="#" class="text-purple-100 hover:text-sky-400 hover:text-lg transition ">ارتباط با ما</a>
+                </div>
+                <a href="#" class="text-purple-100 hover:text-sky-400 hover:text-lg transition ">ورود/ثبت نام</a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- breadcrums -->
+    <div class="container input py-4 flex items-center gap-3">
+        <a href="home.html" class="text-purple-950 text-base">
+            <i class="fas fa-home"></i>
+        </a>
+        <span class="text-sm text-purple-300">
+            <i class="fas fa-chevron-right"></i>
+        </span>
+        <p class="text-purple-600 font-medium">My account</p>
+    </div>
+    <!-- End breadcrums -->
+
+    <!-- Acoount wrapper -->
+    <div class="container grid grid-cols-12 items-start gap-6 pt-4 pb-16">
+        <!-- slidebar -->
+        <div class="col-span-3">
+            <div class="px-4 py-3 shadow flex items-center gap-4">
+                <div class="flex-shrink-0">
+                    <img src="../img/profile.jpg"
+                        class="rounded-full w-14 h-14 border border-gray-500 p-1 object-cover">
+                </div>
+                <div class="flex-grow">
+                    <p class="text-gray-600">سلام</p>
+                    <h4 class="text-gray-800 font-medium">امیرحسین غلامی</h4>
+                </div>
+            </div>
+            <!-- profile links -->
+            <div
+                class="mt-6 text-center bg-gray-100 shadow rounded p-4 divide-y divide-gray-300 space-y-4 text-gray-600">
+                <div class="space-y-1 pl-8">
+                    <a href="#" class="relative text-red-700 block font-medium text-lg transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="far fa-address-card"></i>
+                        </span>مدیریت حساب</a>
+                    <a href="#" class="relative text-gray-600 hover:text-red-700 block transition">اطلاعات
+                        کاربری</a>
+                    <a href="#" class="relative text-gray-600 hover:text-red-700 block transition">مدیریت
+                        آدرس</a>
+                    <a href="#" class="relative text-gray-600 hover:text-red-700 block transition">تغییر رمز
+                        عبور</a>
+                </div>
+                <hr>
+                <div class="space-y-1 pl-8">
+                    <a href="#"
+                        class="relative text-gray-600 hover:text-red-700 block font-semibold text-lg transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="far fa-address-card"></i>
+                        </span>تاریخچه سفارشات </a>
+                    <a href="#" class="relative text-gray-600 hover:text-red-700 block transition">بازگشتی های من
+                    </a>
+                    <a href="#" class="relative text-gray-600 hover:text-red-700 block transition">کنسلی های من
+                    </a>
+                    <a href="#" class="relative text-gray-600 hover:text-red-700 block transition">بررسی های من
+                    </a>
+                </div>
+                <hr>
+                <div class="space-y-1 pl-8">
+                    <a href="#"
+                        class="relative text-gray-600 hover:text-red-700 block font-semibold text-lg transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="far fa-address-card"></i>
+                        </span>مدیریت حساب </a>
+                    <a href="#" class="relative text-gray-600 hover:text-red-700 block transition">اطلاعات کاربری
+                    </a>
+
+                </div>
+                <hr>
+                <div class="space-y-1 pl-8">
+                    <a href="#"
+                        class="relative text-gray-600 hover:text-red-700 block font-semibold text-lg transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="far fa-address-card"></i>
+                        </span>علاقه مندی ها </a>
+                </div>
+                <hr>
+                <div class="space-y-1 pl-8">
+                    <a href="#"
+                        class="relative text-gray-600 hover:text-red-700 block font-semibold text-lg transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="far fa-address-card"></i>
+                        </span>خروج از حساب </a>
+                </div>
+            </div>
+            <!-- End profile links -->
+        </div>
+        <!-- End slidebar -->
+
+        <!-- Profile info -->
+        <div class="col-span-9 grid grid-cols-3 gap-4">
+            <div class="shadow rounded bg-white px-4 pt-6 pb-8 w-44">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-medium text-gray-800 text-lg">Personal profile</h3>
+                    <a href="#" class="text-red-600">Edit</a>
+                </div>
+                <div class="space-y-1">
+                    <h4 class="text-gray-700 font-medium">امیرمحمد اسماعیل پور</h4>
+                    <p class="text-gray-600">amir65@gmail.com</p>
+                    <p class="text-gray-600">123 3434-223</p>
+                </div>
+            </div>
+            <div class="shadow rounded bg-white px-4 pt-6 pb-8 w-44">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-medium text-gray-800 text-lg">Personal profile</h3>
+                    <a href="#" class="text-red-600">Edit</a>
+                </div>
+                <div class="space-y-1">
+                    <h4 class="text-gray-700 font-medium">رضا معتمد</h4>
+                    <p class="text-gray-600">reza44@gmail.com</p>
+                    <p class="text-gray-600">123 3434-223</p>
+                </div>
+            </div>
+            <div class="shadow rounded bg-white px-4 pt-6 pb-8 w-44">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-medium text-gray-800 text-lg">Personal profile</h3>
+                    <a href="#" class="text-red-600">Edit</a>
+                </div>
+                <div class="space-y-1">
+                    <h4 class="text-gray-700 font-medium">پوریا ثابت</h4>
+                    <p class="text-gray-600">sabet33@gmail.com</p>
+                    <p class="text-gray-600">123 3434-223</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Profile info -->
+    </div>
+    <!-- End Acoount wrapper -->
+
+
+
+    <!-- Footer -->
+    <footer class="bg-white pt-16 pb-12  font-bold border-t border-gray-100 ">
+        <div class="container grid grid-cols-3 ">
+            <!-- footer text -->
+            <div class="col-span-1 space-y-8">
+                <img src="../Logo/header logo.svg" class="w-32 h-32" alt="logo">
+                <p class="fonty font-bold text-purple-900">راز فروش ما محصول با کیفیت است<br> هر آنچه نیاز شما
+                    باشد با فروشگاه امیر رفع خواهد شد</p>
+                <div>
+                    <a href="" class="text-purple-600 hover:text-gray-600 pl-4"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" class="text-purple-600 hover:text-gray-600 pl-4"><i class="fab fa-twitter"></i></a>
+                    <a href="" class="text-purple-600 font-bold400 hover:text-gray-600 pl-4"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="" class="text-purple-600 hover:text-gray-600 pl-4"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <!-- End footer text  -->
+
+            <!-- footer links -->
+            <div class="col-span-2 grid grid-cols-2 gap-8">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold text-purple-400 uppercase tracking-wider">راه حل ها</h3>
+                        <div class="mt-4 space-y-4 font-bold">
+                            <a href="" class="text-base text-gray-500 hover:text-black block">بازاریابی</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">تجزیه و تحلیل</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">تبلیغات</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">بینش</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-purple-400 uppercase tracking-wider">پشتیبانی</h3>
+                        <div class="mt-4 space-y-4 font-bold">
+                            <a href="" class="text-base text-gray-500 hover:text-black block">قیمت گزاری</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">وضعیت api</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">مستندات</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">راهنمایی ها</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold text-purple-400 uppercase tracking-wider">مجاز</h3>
+                        <div class="mt-4 space-y-4 font-bold">
+                            <a href="" class="text-base text-gray-500 hover:text-black block">مطالبه</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">حریم خصوصی</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">خط مشی</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">مقررات</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-purple-400 uppercase tracking-wider">شرکت</h3>
+                        <div class="mt-4 space-y-4 font-bold">
+                            <a href="" class="text-base text-gray-500 hover:text-black block">درباره ما </a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">وبلاگ</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">فرصت های شغلی</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">مطبوعات</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- End footer links -->
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+
+    <!-- Copyright -->
+    <div class="bg-purple-900 py-4">
+        <div class="container flex items-center justify-between">
+            <p class="text-white pl-4">&#169; pc accessories Amir - all right reserved</p>
+        </div>
+    </div>
+
+    <!-- End Copyright -->
+</body>
+
+</html>
