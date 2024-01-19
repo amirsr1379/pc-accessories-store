@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>pc accessories store</title>
+</head>
+
+<body class="text-right overflow-x-hidden">
+    <!-- header -->
+    <header class="py-4 shadow-md bg-purple-50">
+        <div class="container flex items-center justify-between">
+            <!-- logo-->
+            <a href="#"><img src="../Logo/header logo.svg" class="w-24" alt="website logo"></a>
+            <!-- searchbar-->
+            <div class="w-full max-w-xl relative flex">
+                <span class="absolute left-4 top-2 text-lg text-purple-600">
+                    <i class="fas fa-search"></i>
+                </span>
+                <input type="text"
+                    class="w-full border-2 border-purple-800 pl-12 py-3 pr-3 rounded-l-md focus:outline-none focus:bg-purple-400 focus:text-lg"
+                    placeholder="جستجو">
+                <button
+                    class="bg-purple-600 border text-white text-lg px-8 rounded-r-md hover:bg-black hover:text-purple-400 transition">جستجو</button>
+            </div>
+            <!-- icons -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-center text-purple-600 hover:text-purple-400 no-underline transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3 text-purple-950 font-bold">علاقه مندی ها</div>
+                    <span
+                        class="absolute right-0 top-1 w-5 h-5 rounded-full flex items-center justify-center bg-gray-700 text-white text-xs">25</span>
+                </a>
+                <a href="#" class="text-center text-purple-600 hover:text-purple-400 no-underline transition relative">
+                    <div class="text-2xl">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="text-xs leading-3 text-purple-950 font-bold">سبد خرید</div>
+                    <span
+                        class="absolute -right-3 top-1 w-5 h-5 rounded-full flex items-center justify-center bg-gray-700 text-white text-xs">13
+                    </span>
+                </a>
+                <a href="#" class="text-center text-purple-600 hover:text-purple-400 no-underline transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3 text-purple-950 font-bold">حساب کاربری</div>
+                    <span
+                        class="absolute right-0 top-1 w-5 h-5 rounded-full flex items-center justify-center bg-gray-700 text-white text-xs">3</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+
+
+
+
+
+
+
+    <!-- navbar -->
+    <nav class="bg-purple-950">
+        <div class="container flex flex-row-reverse ">
+            <!--  category -->
+            <div class="px-8 py-5 bg-purple-800 rounded-md flex items-center cursor-pointer  relative group">
+                <span class="capitalize mx-6 text-white hover:text-purple-400">دسته بندی ها</span>
+                <span class="text-white">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <div
+                    class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-dashed divide-x-0 divide-purple-300 hidden group-hover:block">
+                    <!-- subcategory -->
+                    <a href="#" class=" px-6 py-1  flex items-center hover:bg-purple-100 transition">
+                        <img src="../Logo/ram.jpg" alt="" class="w-10 h-10 object-contain">
+                        <span class="ml-6 text-purple-600 text-sm font-bold "> RAM</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-6 py-1  hover:bg-purple-100 transition ">
+                        <img src="../Logo/ssd.jpg" alt="" class="w-10 h-14 object-contain">
+                        <span class="ml-6 text-purple-600 text-sm font-bold "> SSD</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-6 py-3 6 hover:bg-purple-100 transition ">
+                        <img src="../Logo/gpu.png" alt="" class="w-10 h-10 object-contain">
+                        <span class="ml-6 text-purple-600 text-sm font-bold ">GPU</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-6 py-6 pl-6 hover:bg-purple-100 transition ">
+                        <img src="../Logo/cpu.png" alt="" class="w-10 h-10 object-contain">
+                        <span class="ml-6 text-purple-600 text-sm font-bold ">CPU</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-0 pl-3 hover:bg-purple-100 transition ">
+                        <img src="../Logo/motherboard.jpg" alt="" class="w-14 h-14 object-contain">
+                        <span class="text-purple-600 text-sm font-bold ">MOTHER BOARD</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-6 pl-4 hover:bg-purple-100 transition ">
+                        <img src="../Logo/power.jpg" alt="" class="w-12 h-12 object-contain">
+                        <span class="ml-6 text-purple-600 text-sm font-bold ">POWER</span>
+                    </a>
+                </div>
+            </div>
+            <!-- end subcategory-->
+
+            <!-- nav links -->
+            <div class="flex items-center justify-between flex-grow pr-12">
+                <div class="flex items-center space-x-6 capitalize pl-8">
+                    <a href="../public/home.html"
+                        class="text-purple-100 hover:text-purple-400 hover:text-lg transition ">خانه</a>
+                    <a href="../public/shop.html"
+                        class="text-purple-100 hover:text-purple-400 hover:text-lg transition ">فروشگاه</a>
+                    <a href="#" class="text-purple-100 hover:text-purple-400 hover:text-lg transition ">درباره ما</a>
+                    <a href="#" class="text-purple-100 hover:text-purple-400 hover:text-lg transition ">ارتباط با ما</a>
+                </div>
+                <a href="../public/login.html"
+                    class="text-purple-100 hover:text-purple-400 hover:text-lg transition ">ورود/ثبت
+                    نام</a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+
+
+    <!-- breadcrums -->
+    <div class="container py-4 flex flex-row-reverse items-center gap-3">
+        <a href="home.html" class="text-purple-950 text-base">
+            <i class="fas fa-home"></i>
+        </a>
+        <span class="text-sm text-purple-300">
+            <i class="fas fa-chevron-right"></i>
+        </span>
+        <p class="text-purple-600 font-medium">product view</p>
+    </div>
+    <!-- breadcrums end -->
+
+    <!-- product view -->
+    <div class="container grid grid-cols-2 gap-6 pt-4">
+        <!-- product image -->
+        <div class="w-3/6 h-1/6 border">
+            <img src="../img/CPU/cpu3.jpg" alt="" class="w-full rounded-lg ml-16 mt-16">
+            <div class="grid grid-cols-5 gap-4 mt-4">
+                <img src="../img/CPU/cpu10.jpg" alt=""
+                    class="w-10 h-16  cursor-pointer border border-purple-800 p-1 hover:bg-red-800">
+                <img src="../img/CPU/cpu14.jpg" alt="" class="w-10 h-16  cursor-pointer border p-1 hover:bg-red-800">
+                <img src="../img/CPU/cpu8.jpg" alt="" class="w-12 h-16  cursor-pointer border p-1 hover:bg-red-800">
+                <img src="../img/CPU/cpu11.jpg" alt="" class="w-12 h-16  cursor-pointer border p-1 hover:bg-red-800">
+                <img src="../img/CPU/cpu1.jpg" alt="" class="w-12 h-16  cursor-pointer border p-1 hover:bg-red-800">
+            </div>
+        </div>
+        <!-- product image end -->
+
+        <!-- product content -->
+        <div class="input">
+            <h2 class="text-3xl font-medium uppercase mb-2">The latest proccessors on the market </h2>
+            <div class="flex items-center mb-4">
+                <div class="flex gap-1 text-sm text-yellow-400">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                </div>
+                <div class="text-xs text-purple-500 mr-3">(150 بررسی ها)</div>
+            </div>
+            <div>
+                <p class="space-x-2">
+                    <span class="text-purple-800 font-semibold">دسترسی:</span>
+                    <span class="text-purple-600">در انبار</span>
+                </p>
+                <p class="space-x-2">
+                    <span class="text-purple-800 font-semibold">نام تجاری:</span>
+                    <span class="text-purple-600">Intel</span>
+                </p>
+                <p class="space-x-2">
+                    <span class="text-purple-800 font-semibold">دسته بندی:</span>
+                    <span class="text-purple-600">Cpu</span>
+                </p>
+                <p class="space-x-2">
+                    <span class="text-purple-800 font-semibold">کد دسترسی:</span>
+                    <span class="text-purple-600">57AD363</span>
+                </p>
+            </div>
+            <div class="flex items-baseline mb-1 space-x-2 mt-4">
+                <p class="text-2xl text-red-800 font-semibold">$20.00</p>
+                <p class="text-base text-purple-400 line-through">$23.00</p>
+            </div>
+            <p class="mt-4 text-purple-600">از بهترین پردازنده های بازار،میتوان به پردازنده جدید اینتل اشاره کرد که در
+                بازار از فروش و استقبال خوبی برخوردار شد.از این پردازنده میتوان در زمینه بازی های ویدیویی و یا طراحی های
+                سنگین اشاره کرد.
+            </p>
+
+            <!-- size filter -->
+            <div class="pt-4">
+                <h3 class="text-xl text-purple-800 mb-3 uppercase font-medium">اندازه</h3>
+                <div class="flex items-center gap-2">
+                    <!-- single size -->
+                    <div class="size-selector">
+                        <input type="radio" name="size" class="hidden" id="size-s">
+                        <label for="size-s"
+                            class="text-sm border border-purple-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-purple-600">S</label>
+                    </div>
+                    <!-- single size end -->
+                    <!-- single size -->
+                    <div class="size-selector">
+                        <input type="radio" name="size" class="hidden" id="size-b">
+                        <label for="size-b"
+                            class="text-sm border border-purple-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-purple-600">B</label>
+                    </div>
+                    <!-- single size end -->
+                </div>
+            </div>
+            <!-- size filter end -->
+
+            <!-- cart button -->
+            <div class="flex gap-3 border-b border-purple-200 pb-5 mt-6">
+                <a href="#"
+                    class="bg-purple-300 border border-purple-300 text-purple-950 px-8 py-2 font-medium rounded uppercase flex items-center gap-2 hover:bg-transparent hover:text-purple-950 transition">
+                    <i class="fas fa-shopping-bag"></i>افزودن به سبد خرید
+                </a>
+                <a href="#"
+                    class="bg-purple-300 border border-purple-300 text-purple-950 px-8 py-2 font-medium rounded uppercase flex items-center gap-2 hover:bg-transparent  hover:text-purple-950 transition">
+                    <i class="fas fa-heart"></i>علاقه مندی ها
+                </a>
+            </div>
+            <!-- cart button end -->
+
+            <!-- social share -->
+            <div class="flex gap-3 mt-3 text-3xl">
+                <a href="#"
+                    class="text-purple-950 hover:text-purple-600 h-8 w-8 rounded-full border border-purple-300 flex items-center justify-items-center">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#"
+                    class="text-purple-950 hover:text-purple-600 h-8 w-8 rounded-full border border-purple-300 flex items-center justify-items-center">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#"
+                    class="text-purple-950 hover:text-purple-600 h-8 w-8 rounded-full border border-purple-300 flex items-center justify-items-center">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <!-- social share end -->
+
+        </div>
+        <!-- product content end -->
+    </div>
+    <!-- product view end -->
+
+    <!-- product view details -->
+    <div class="container pb-16 input">
+        <h3 class="border-b border-purple-300 text-purple-800 pb-3 font font-medium">اطلاعات محصولات</h3>
+
+        <div class="w-3/5 pt-6">
+            <div class="text-purple-600 space-y-3">
+                <p>عمدتا از پردازنده یا همان سی پی یو ( Central processing unit ) به عنوان مغز دستگاه الکترونیکی یاد می
+                    شود، از سی پی یو همچنین به عنوان مهم ترین بخش پردازشی در کامپیوتر هم یاد می شود به عبارت دیگر سی پی
+                    یو قسمتی از کامپیوتر شما است که بدون آن دستگاه شما قدرت انجام هیچ کاری از جمله محاسبات را ندارد، یکی
+                    از وظایف اصلی سی پی یو در دستگاه های مختلف گرفتن دیتای مختلف از رم و پردازش کردن آن دیتا هستش و بعد
+                    از این پروسه این دیتا را ارائه می دهد، سی پی یو در انواع دستگاه های مختلف مثل لپ تاپ ها، تبلت ها و
+                    ... وجود دارد و نقش مهمی را بازی می کند در این روز ها سی پی یو ها غالبا به شکل مربع های کوچک آهنی
+                    هستند که بر روی مادربرد های دستگاه های مختلف نصب می شوند ولی لازمه که بدونید همیشه سی پی یو ها به
+                    این شکل نبودند !! </p>
+            </div>
+        </div>
+    </div>
+    <!-- product view details end -->
+
+    <!-- product wrpper -->
+    <div class="container pb-16">
+        <h2 class="text-2xl font-medium text-purple-950 uppercase mb-6">محصولات مرتبط</h2>
+
+        <!-- product grid -->
+        <div class="grid grid-cols-4 gap-6 ">
+            <!-- single product -->
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <!-- product image -->
+                <div class="relative">
+                    <img src="../img/CPU/cpu14.jpg" alt="" class="w-full h-96">
+                    <div
+                        class="absolute inset-0 bg-purple-300 bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-purple-950 flex items-center justify-center hover:bg-purple-800 transition">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-purple-950 flex items-center justify-center hover:bg-purple-800 transition">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- product image end -->
+
+                <!-- product content -->
+                <div class="pt-4 pb-3 px-4">
+                    <a href="">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-purple-800 hover:text-purple-600 transition">
+                            Cpu cori 5</h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-purple-800 font-semibold">$10</p>
+                        <p class="text-sm text-purple-300 line-through">$15</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 texxt-sm text-yellow-400">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-purple-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-purple-800 border border-purple-950  rounded-b hover:bg-transparent hover:text-purple-800 transition">به
+                    سبد خرید اضافه کنید</a>
+                <!-- product content end -->
+
+            </div>
+            <!-- single product end -->
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <!-- product image -->
+                <div class="relative">
+                    <img src="../img/CPU/cpu3.jpg" alt="" class="w-full h-96">
+                    <div
+                        class="absolute inset-0 bg-purple-300 bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-purple-950 flex items-center justify-center hover:bg-purple-800 transition">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-purple-950 flex items-center justify-center hover:bg-purple-800 transition">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- product image end -->
+
+                <!-- product content -->
+                <div class="pt-4 pb-3 px-4">
+                    <a href="">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-purple-800 hover:text-purple-600 transition">
+                            Cpu cori 3</h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-purple-800 font-semibold">$14</p>
+                        <p class="text-sm text-purple-300 line-through">$16</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 texxt-sm text-yellow-400">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-purple-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-purple-800 border border-purple-950  rounded-b hover:bg-transparent hover:text-purple-800 transition">به
+                    سبد خرید اضافه کنید</a>
+                <!-- product content end -->
+
+            </div>
+            <!-- single product end -->
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <!-- product image -->
+                <div class="relative">
+                    <img src="../img/CPU/cpu8.jpg" alt="" class="w-full h-96">
+                    <div
+                        class="absolute inset-0 bg-purple-300 bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-purple-950 flex items-center justify-center hover:bg-purple-800 transition">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-purple-950 flex items-center justify-center hover:bg-purple-800 transition">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- product image end -->
+
+                <!-- product content -->
+                <div class="pt-4 pb-3 px-4">
+                    <a href="">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-purple-800 hover:text-purple-600 transition">
+                            Cpu cori 7
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-purple-800 font-semibold">$8</p>
+                        <p class="text-sm text-purple-300 line-through">$12</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 texxt-sm text-yellow-400">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-purple-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-purple-800 border border-purple-950  rounded-b hover:bg-transparent hover:text-purple-800 transition">به
+                    سبد خرید اضافه کنید</a>
+                <!-- product content end -->
+
+            </div>
+            <!-- single product end -->
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <!-- product image -->
+                <div class="relative">
+                    <img src="../img/CPU/cpu15.jpg" alt="" class="w-full h-96">
+                    <div
+                        class="absolute inset-0 bg-purple-300 bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-purple-950 flex items-center justify-center hover:bg-purple-800 transition">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-purple-950 flex items-center justify-center hover:bg-purple-800 transition">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- product image end -->
+
+                <!-- product content -->
+                <div class="pt-4 pb-3 px-4">
+                    <a href="">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-purple-800 hover:text-purple-600 transition">
+                            Cpu cori 9</h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-purple-800 font-semibold">$15</p>
+                        <p class="text-sm text-purple-300 line-through">$20</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 texxt-sm text-yellow-400">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-purple-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-purple-800 border border-purple-950  rounded-b hover:bg-transparent hover:text-purple-800 transition">به
+                    سبد خرید اضافه کنید</a>
+                <!-- product content end -->
+
+            </div>
+            <!-- single product end -->
+
+
+        </div>
+        <!-- product grid end -->
+
+    </div>
+    <!-- product wrpper end -->
+
+
+    <!-- Footer -->
+    <footer class="bg-white pt-16 pb-12  font-boldborder-t border-gray-100 ">
+        <div class="container grid grid-cols-3 ">
+            <!-- footer text -->
+            <div class="col-span-1 space-y-8">
+                <img src="../Logo/header logo.svg" class="w-32 h-32" alt="logo">
+                <p class="fonty font-bold text-purple-900">راز فروش ما محصول با کیفیت است<br> هر آنچه نیاز شما
+                    باشد با فروشگاه امیر رفع خواهد شد</p>
+                <div>
+                    <a href="" class="text-purple-600 hover:text-gray-600 pl-4"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" class="text-purple-600 hover:text-gray-600 pl-4"><i class="fab fa-twitter"></i></a>
+                    <a href="" class="text-purple-600 font-bold400 hover:text-gray-600 pl-4"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="" class="text-purple-600 hover:text-gray-600 pl-4"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <!-- End footer text  -->
+
+            <!-- footer links -->
+            <div class="col-span-2 grid grid-cols-2 gap-8">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold text-purple-400 uppercase tracking-wider">راه حل ها</h3>
+                        <div class="mt-4 space-y-4 font-bold">
+                            <a href="" class="text-base text-gray-500 hover:text-black block">بازاریابی</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">تجزیه و تحلیل</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">تبلیغات</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">بینش</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-purple-400 uppercase tracking-wider">پشتیبانی</h3>
+                        <div class="mt-4 space-y-4 font-bold">
+                            <a href="" class="text-base text-gray-500 hover:text-black block">قیمت گزاری</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">وضعیت api</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">مستندات</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">راهنمایی ها</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold text-purple-400 uppercase tracking-wider">مجاز</h3>
+                        <div class="mt-4 space-y-4 font-bold">
+                            <a href="" class="text-base text-gray-500 hover:text-black block">مطالبه</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">حریم خصوصی</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">خط مشی</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">مقررات</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-purple-400 uppercase tracking-wider">شرکت</h3>
+                        <div class="mt-4 space-y-4 font-bold">
+                            <a href="" class="text-base text-gray-500 hover:text-black block">درباره ما </a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">وبلاگ</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">فرصت های شغلی</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">مطبوعات</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- End footer links -->
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+
+    <!-- Copyright -->
+    <div class="bg-purple-900 py-4">
+        <div class="container flex items-center justify-between">
+            <p class="text-white pl-4">&#169; pc accessories Amir - all right reserved</p>
+        </div>
+    </div>
+
+    <!-- End Copyright -->
+</body>
+
+</html>
